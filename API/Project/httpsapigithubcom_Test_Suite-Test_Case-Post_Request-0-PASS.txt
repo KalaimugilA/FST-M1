@@ -1,0 +1,66 @@
+Status: PASS
+Time Taken: 334
+Size: 261
+Timestamp: Mon Apr 11 15:06:17 IST 2022
+TestStep: Post Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: POST
+StatusCode: 201
+URL: https://api.github.com/user/keys
+
+---------------- Request ---------------------------
+Authorization: [Bearer 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]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/16.0.1)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [108]
+Content-Type: [application/json]
+
+POST https://api.github.com/user/keys HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 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
+Content-Length: 108
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/16.0.1)
+
+{"test":"TestKey",
+"key":"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJUWdAQDfml/ZaGIGOY0ukPxLLJ0FthWPpZ5EkkPpvjs"}
+
+---------------- Response --------------------------
+X-Accepted-OAuth-Scopes: [admin:public_key, write:public_key]
+Server: [GitHub.com]
+X-RateLimit-Resource: [core]
+X-RateLimit-Used: [5]
+Access-Control-Allow-Origin: [*]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4995]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+#status#: [HTTP/1.1 201 Created]
+Content-Length: [261]
+X-XSS-Protection: [0]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [C702:6AB9:43D8E:52587:6253F690]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1649671926]
+Date: [Mon, 11 Apr 2022 09:36:17 GMT]
+Cache-Control: [private, max-age=60, s-maxage=60]
+ETag: ["d41a2fc6de4c3e91ea1b21db3d6b3d2758f01f8411e779cc250b2e4976990935"]
+Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+X-OAuth-Scopes: [admin:public_key, user:email]
+github-authentication-token-expiration: [2022-05-11 08:53:57 UTC]
+Location: [https://api.github.com/user/keys/64846635]
+
+{"id":64846635,"key":"ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJUWdAQDfml/ZaGIGOY0ukPxLLJ0FthWPpZ5EkkPpvjs","url":"https://api.github.com/user/keys/64846635","title":"ssh-ed25519 AAAAC3NzaC1lZD","verified":true,"created_at":"2022-04-11T09:36:17Z","read_only":false}
